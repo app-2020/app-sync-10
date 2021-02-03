@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>tweeter!</title>
+    </head>
+    <body>
+        <h1>tweets</h1>
+        <ul>
+            {% for tweet in tweets %}
+            <li>{{tweet.user.username}}: {{tweet.tweet}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
